@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREND LAWN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="http://trendlawn.tk/"><img src="images/trend lawn logo.png" width="150px">
+        </a>
+        </div>
+        <nav>
+            <ul id="menulist">
+                <li><a href="" >Home</a></li>
+                <li><a href="" >Shop</a></li>
+                <li><a href="" >Contact us</a></li>
+                <li><a href="" >About us</a></li>
+                <li><a href="" >My Acount</a></li>
+            </ul> 
+        </nav>
+        <img id="menuicon" src="images/menu.png" width="50px"  onclick="togglemenu()">
+    </div>
+    <div class="banner">
+        <h2>MAKE YOUR HOME<br>
+                MORE BEAUTIFUL</h2>
+            <p>EXPLOR OUR NEW COLLECTIONS</p>
+            <section class="button1">
+                <button>shop now</button>
+            </section>
+    </div>
+    <div class="product">
+        <h1>featured products</h1>            
+    </div>
+</body>
+<script>
+var menulist = document.getElementById("menulist");
+
+    menulist.style.maxHeight = "0px";
+
+    function togglemenu(){
+        if
+        (menulist.style.maxHeight == "0px")
+        {
+            menulist.style.maxHeight = "230px";
+        }
+        else
+        {
+            menulist.style.maxHeight = "0";
+        }
+    }
+</script>
+</html>

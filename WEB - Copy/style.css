@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(#FFFFFF);
+}
+.body .nav{
+    min-height: 1.25rem;
+    width: 6.25rem;
+    text-align: center;
+    flex: 1;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    background-color: #FCFBFA;
+    justify-content: space-between;
+    position: relative;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 1.25rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 3, 3);
+    font-size: 1.3rem
+}
+.logo{
+    text-align: center;
+    margin-top: 0.375rem;
+    margin-left: 6.25rem;
+
+}
+nav ul li::after{
+    content: "";
+    width: 0%;
+    height: 0.125rem;
+    background: #8A5A44;
+    display: block;
+    margin: auto;
+}
+nav ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+    height: 0.17rem;
+}
+.banner{
+    background-image:url(images/banner.png);
+    height: 65vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%
+    
+}
+.button1{
+  text-align: center;
+}
+.button1 button{
+    font-family: 'poppins';
+    position: relative;
+    background-color: #8A5A44;
+    color: #FBEDE1;
+    font-size: 1.17rem;
+    font-weight: 600;
+    padding: 0.9rem 2rem;
+    border: 0.125rem solid black;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0rem 0.5rem 1rem #000;
+    align-items: center;
+    margin-top: 25%;
+}
+.banner h2{
+  font-family: 'poppins';
+  font-size: 4rem;
+  font-weight: 800;
+  color: #CCC3BC;
+  text-align: left;
+}
+.banner p{
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: #000;
+  padding: 0 1.5rem;
+}
+#bannertext{
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+#menuicon{
+    display: none;
+}
+
+@media only screen and (max-width:824px){
+    nav ul{
+        width: 100%;
+        background: rgb(190, 187, 187);
+        position: absolute;
+        top: 96px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: black;
+    }
+    .banner{width: fit-content;
+    }
+    #menuicon{
+        display: block;
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .logo{
+        text-align: center;
+        margin: 0;
+    }
+    .banner{
+        margin: 0;
+        height: 65vh;
+        width: 100%;
+    }
+    .banner h2{
+        font-size: calc(5vw + 12px);
+        position: absolute;
+    }
+    .banner p{
+        font-size: calc(5vw + 12px);
+        position: absolute;
+    }
+    .button1{
+        display: none;
+    }
+}
